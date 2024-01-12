@@ -1,0 +1,353 @@
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    max-width: 1068px;
+    margin: auto;
+    margin-bottom: -15em;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    
+    width: 100%;
+    background: white;
+    padding: 40px;
+}
+
+.formbold-form-img {
+    margin-bottom: 45px;
+}
+
+.formbold-input-group {
+    margin-bottom: 18px;
+}
+
+.formbold-form-select {
+    width: 100%;
+    padding: 12px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+}
+
+.formbold-input-radio-wrapper {
+    margin-bottom: 25px;
+}
+.formbold-radio-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.formbold-radio-label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #07074d;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.formbold-input-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.formbold-radio-checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ec;
+    border-radius: 50%;
+}
+.formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark {
+    background-color: #6a64f1;
+}
+.formbold-radio-checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark:after {
+    display: block;
+}
+
+.formbold-radio-label .formbold-radio-checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    outline: none;
+    resize: none;
+}
+.formbold-form-input::placeholder {
+    color: #536387;
+}
+.formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.formbold-form-label {
+    color: #07074d;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formbold-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #C7DCA7;
+    color: black;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+/*----------------------------
+    The file upload form
+-----------------------------*/
+
+
+#upload {
+    max-width: 1068px;
+    margin: auto;
+    background: #fff;
+    background-image: -webkit-linear-gradient(top, #C7DCA7, #C7DCA7);
+    background-image: -moz-linear-gradient(top, #C7DCA7, #C7DCA7);
+    background-image: linear-gradient(top, #C7DCA7, #C7DCA7);    
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#drop{
+    background-color: #fff;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    border-image: url('../img/border-image.png') 25 repeat;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#drop a{
+    background-color:#C7DCA7;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+    transform: 0.5s;
+}
+
+#drop a:hover{
+    background-color:#89B9AD;
+}
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+    list-style:none;
+    margin:0 -30px;
+    border-top:1px solid #2b2e31;
+    border-bottom:1px solid #3d4043;
+}
+
+#upload ul li{
+
+    background-color:#333639;
+
+    background-image: -webkit-linear-gradient(top, #C7DCA7, #C7DCA7);
+    background-image: -moz-linear-gradient(top, #C7DCA7, #C7DCA7);
+    background-image: linear-gradient(top, #C7DCA7, #C7DCA7);
+    
+
+    border-top:1px solid #3d4043;
+    
+    padding:15px;
+    height: 52px;
+
+    position: relative;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../img/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:green;
+}
+
+
+
+
+
+
+/* Variables */
+:root {
+    --background: #f5f6fa;
+    --text: #07074d;
+    --input-bg-color: #fff;
+    --input-text-color: #07074d;
+    --button-bg-color: #7f8ff4;
+    --button-text-color: #fff;
+  }
+  
+
+  :root {
+    background: var(--background);
+    color: var(--text);
+    font: 1rem "PT Sans", sans-serif;
+  }
+  
+
+  
+
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+  }
+  
+  .btn--primary {
+    background: #C7DCA7;
+    color: black;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 12px 36px;
+  }
+  
+  .btn--primary:hover {
+    background: var(--button-bg-color);
+  }
+  
+  .btn--primary:active {
+    background: var(--button-bg-color);
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn--inside {
+    margin-left: -96px;
+  }
+  
+  /* Form */
+  .form__field {
+    width: 360px;
+    background: #fff;
+    color: var(--input-text-color);
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    padding: 22px 18px;
+  }
+  
